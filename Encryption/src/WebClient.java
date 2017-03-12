@@ -7,10 +7,9 @@ public class WebClient {
         
     	String address = "www.google.com"; 
     	 // InetAddress address = InetAddress.getLocalHost(); //get local IP address
-    	address="127.0.0.2"; //localhost
 
     	  
-        int port = 8080;
+        int port = 80;
         //Create Socket
         Socket sock=new Socket(address, port);
 

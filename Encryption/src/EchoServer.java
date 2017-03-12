@@ -7,7 +7,7 @@ public class EchoServer {
 
       try{
         
-        ServerSocket server = new ServerSocket(8080); //listen to port 8080
+          ServerSocket server = new ServerSocket(8080); //listen to port 8080
 
 
         System.out.println("Waiting Incoming Connection...");
@@ -19,7 +19,7 @@ public class EchoServer {
         String strin = instream.readLine();
         System.out.println(strin);
         if (strin.equals("Hello")){ //following the protocol
-                outstream.write("Welcome "+"\n");
+                outstream.write("Welcome DD"+"\n");
                 outstream.flush();
                 
                 //write your code
@@ -43,6 +43,4 @@ public class EchoServer {
             System.out.println("Error during I/O");
             ex.getMessage();
             ex.printStackTrace();
-        }
-      }
-    }
+        }    } }

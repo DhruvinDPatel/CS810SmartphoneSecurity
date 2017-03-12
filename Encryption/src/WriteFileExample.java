@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,6 +11,7 @@ public class WriteFileExample {
 		String content = "This is the text content";
 
 		try {
+			//c:/newfile.txt"
 
 			file = new File("newfile.txt");
 			fop = new FileOutputStream(file);
